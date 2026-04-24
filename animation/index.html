@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+
+  <form id="contactForm">
+    <input id="name" placeholder="Your Name">
+    <input id="email" placeholder="Email">
+    <textarea id="message" placeholder="Message"></textarea>
+
+    <button type="submit">
+      <span id="btnText">Send</span>
+      <span id="loader" class="hidden">⏳</span>
+    </button>
+  </form>
+
+  <p id="msg"></p>
+</section>
+
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function(){
+  emailjs.init("H6X7U1WP4iLDjVUcf");
+})();
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
