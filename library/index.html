@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <h2>TaskApp</h2>
+  <div>
+    <button onclick="showLogin()">Login</button>
+    <button onclick="showRegister()">Register</button>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- Login -->
+  <div id="loginForm" class="card">
+    <h2>Login</h2>
+    <input id="loginUser" placeholder="Username">
+    <input id="loginPass" type="password" placeholder="Password">
+    <button onclick="login()" class="btn">Login</button>
+  </div>
+
+  <!-- Register -->
+  <div id="registerForm" class="card hidden">
+    <h2>Register</h2>
+    <input id="regUser" placeholder="Username">
+    <input id="regPass" type="password" placeholder="Password">
+    <button onclick="register()" class="btn">Register</button>
+  </div>
+
+  <!-- Dashboard -->
+  <div id="dashboard" class="hidden">
+    <h2 id="welcomeUser"></h2>
+
+    <div class="card">
+      <input id="taskInput" placeholder="Enter task">
+      <button onclick="addTask()" class="btn">Add Task</button>
+    </div>
+
+    <div class="card">
+      <ul id="taskList"></ul>
+    </div>
+
+    <button onclick="logout()" class="btn logout">Logout</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
