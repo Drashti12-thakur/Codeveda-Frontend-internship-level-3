@@ -13,7 +13,7 @@ This project includes:
 2. Advanced Animations & Interactive UI
 3. Portfolio Contact Form with Email Integration
 
----
+--- 
 
 ## 🧩 Task 1: Component-Based Web Application
 
